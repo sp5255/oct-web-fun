@@ -1,0 +1,32 @@
+* {
+    margin: 0%;
+}
+header {
+    background: rgb(116, 116, 238);
+    color: white;
+    display: flex;
+    justify-content: center;
+    line-height: 1.6em;
+    font-size: 1.4em;
+    position: sticky;
+    top: 0em;
+    z-index: 2;
+}
+.list p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6em;
+    font-size: 1.2em;
+    margin: 0em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border-bottom: 0.1em solid black;
+    background: rgb(212, 252, 248);
+}
+.list :first-child {
+    background: #ee0fff;
+    color: white;
+    position: sticky;
+    top: 1.8em;
+}

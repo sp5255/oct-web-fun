@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Triangles</title>
+
+        <style>
+            * {
+                margin: 0em;
+                box-sizing: border-box;
+            }
+
+            .container {
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                width: 100vw;
+                background-color: #006f66;
+            }
+
+            .first,
+            .second,
+            .third {
+                height: 0em;
+                width: 0em;
+                border: 10em solid transparent;
+                border-bottom: 10em solid #ffeed0;
+                position: absolute;
+                z-index: 4;                
+            }
+            .first{
+                margin-bottom: 20em;
+            }
+            .second {
+                /* top: 50; */
+                margin-bottom: 10em;
+                border-bottom: 10em solid #f6c082;
+                z-index: 3;
+
+            }
+            .third {
+                /* top: 8em; */
+                /* margin-bottom: 3em; */
+                border-bottom: 10em solid #00a79d;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+        </div>
+    </body>
+</html>

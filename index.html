@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignments</title>
+        <style>
+            * {
+                margin: 0%;
+            }
+            nav {
+                background: #0000ff;
+                color: #ffffff;
+                line-height: 1.6em;
+                font-size: 2em;
+                display: grid;
+                place-items: center;
+                padding: 0.2em 0em;
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            a {
+                text-decoration: none;
+                background: coral;
+                color: white;
+                line-height: 1.6em;
+                font-size: 1.6em;
+                margin: 2em 3em;
+                padding: 0.3em 0em;
+                border-radius: 0.3em;
+                width: 10em;
+                display: grid;
+                place-items: center ;
+                /* max-width: 7vw; */
+            }
+            a:hover {                
+                cursor: pointer;
+                filter: drop-shadow(2px 4px 6px black);
+            }
+            /* a:visited{
+                color: blue;
+            }
+            a:link{
+                color: white;
+            } */
+        </style>
+    </head>
+    <body>
+        <nav>
+            <span>Assignments</span>
+        </nav>
+        <div class="container">
+            <a><div>19 october</div></a>
+            <a><div>20 october</div></a>
+            <a><div>21 october</div></a>
+            <a><div>22 october</div></a>
+            <a><div>23 october</div></a>
+            <a><div>24 october</div></a>
+            <a><div>25 october</div></a>
+            <a><div>26 october</div></a>
+            <a><div>27 october(1)</div></a>
+            <a><div>27 october(2)</div></a>
+            <a><div>28 october</div></a>
+            <a><div>29 october</div></a>
+        </div>
+    </body>
+    <script type="text/javascript">
+        let container =document.getElementsByClassName('container')
+        let links = document.getElementsByTagName('a');
+        console.log(links)
+        console.log(container[0].children);        
+        let div = container[0].children;
+        for(let i = 0; i < div.length; i++){
+            let folder = div[i].children[0].innerHTML
+            console.log(folder)
+            links[i].target = 'new';
+            links[i].href = folder+'/index.html'
+        }
+
+    </script>
+</html>
