@@ -1,81 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="stylesheet" href="styles/signup/signup.css" />
-        <title>Signup</title>
+        <title>
+            Survey Form
+        </title>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="index.css">
     </head>
-
-    <body>
-        <div class="container">
-            <div class="f1">
-                <div class="imDiv">
-                    <img
-                        src="images/signup/shutterstock_1141387385-[Converted]-640w.png"
-                        class="img"
-                    />
-                </div>
-                <div class="f2">
-                    <label class="th1"> Create your account </label>
-                    <form class="signForm">
-                        <div class="i1">
-                            <i class="fa fa-user-circle"></i>
-                            <input
-                                type="text"
-                                placeholder="First Name"
-                                class="i2"
-                                required
-                            />
-                        </div>
-                        <div class="i1">
-                            <i class="fa fa-at"></i>
-                            <input
-                                type="email"
-                                placeholder="e-mail"
-                                class="i2"
-                            />
-                        </div>
-                        <div class="i1">
-                            <i class="fa fa-mobile"></i>
-                            <input
-                                type="tel"
-                                placeholder="Mobile number"
-                                class="i2"
-                                required
-                            />
-                        </div>
-                        <div class="i1">
-                            <i class="fa fa-key"></i>
-                            <input
-                                type="password"
-                                placeholder="choose password"
-                                class="i2"
-                                required
-                            />
-                        </div>
-                        <div class="i1">
-                            <i class="fa fa-key"></i>
-                            <input
-                                type="password"
-                                placeholder="Re-type password"
-                                class="i2"
-                                required
-                            />
-                        </div>
-                        <input type="submit" value="Signup" class="signBtn" />
-                    </form>
-                    <div class="back">
-                        <label>Already have an account ?</label>
-                        <a href="html/login.html">Login here</a>
-                    </div>
-                </div>
+    <body class="Survey">
+        <header>
+            <span id="Title">Geekster Survey Form<br/></span>            
+            <span >Thank you for taking the time to help us improve the platform</span> 
+        </header>
+        <br/>
+       <div class="form1">
+        <form>            
+            <div>                
+             <label> Name:<br/></label>
+             <input class="inputs" type="text" required placeholder="Enter your Name"/><br/>
+             <label>Email:</label><br/>
+             <input class="inputs" type="text" required placeholder="Enter your Email"/><br/>
+             <label>Age:</label><br/>
+             <input class="inputs" type="text" placeholder="Enter you Age"/><br/>
+            </div><br/>
+             <div>
+                 <label>which option best describe your current role?</label><br/>
+             <select name="form" class="inputs" >
+                 <option hidden>
+                     select your role?
+                 </option>
+                 <option value="Student">
+                     Student
+                 </option>
+                 <option value="Full time">
+                     Full time
+                 </option>
+                 <option value="Part time">
+                    Part time
+                 </option>
+             </select> <br/>
+             </div><br/>
+             <div>
+                 <label>Would you rocommend Geekster to a friend?</label>   <br/>
+             <input type="radio" name="form" />Definitely<br/>
+             <input type="radio" name="form"/>Maybe<br/>
+             <input type="radio" name="form" />Not Sure<br/>
+             </div><br/>
+             <div>
+                 <label > In which courses uou are interested?</label><br/>
+             <input type="checkbox" name="form"/><label>Data Structure</label><br/>
+             <input type="checkbox" name="form" /><label>Web Development</label><br/>
+             <input type="checkbox" name="form" /><label>Cloud Computing</label><br/>
+             <input type="checkbox" name="form" /><label>Machine Learning</label><br/>
+             </div>
+             <br/>
+             <div>
+                 <label>Any comments or suggestions?</label> <br/>
+             <textarea  rows="5" cols="100" ></textarea>
+             </div><br/>                 
+            <div >
+             <button class = "button" type="submit" value="Submit">Submit
+            </button>
             </div>
-        </div>
-    </body>
+        </form>        
+    </div>
+</body>
 </html>
