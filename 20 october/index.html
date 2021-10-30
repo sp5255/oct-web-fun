@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restro</title>
+        <style>
+            * {
+                margin: 0%;
+                box-sizing: border-box;
+            }
+            .nav {
+                position: sticky;
+                background: rgb(7, 170, 235);
+                color: white;
+                line-height: 1.6rem;
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem;
+                position: sticky;
+                top: 0em;
+            }
+            .menu {
+                display: flex;
+            }
+            .menu__items {
+                margin-right: 1rem;
+            }
+
+            .nav,
+            .menu:hover {
+                cursor: pointer;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .parallax {
+                background: url("images/main.jpg");
+                height: 90vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+            .container > div {
+                width: 30vw;
+                padding: 1em;
+            }
+            .container img {
+                max-width: 100%;
+                box-shadow: 5px 3px 18px -2px black;
+            }
+            .container label {
+                line-height: 1.6em;
+                font-size: 1.6em;
+                color: black;
+            }
+            .footer video {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+            <div>Geeks Restro</div>
+            <div class="menu">
+                <div class="menu__items"><a href="#pizza">Pizza </a></div>
+                <div class="menu__items"><a href="#burger">Burger </a></div>
+                <div class="menu__items">
+                    <a href="#fries">French fries </a>
+                </div>
+            </div>
+        </nav>
+        <div class="parallax"></div>
+        <div class="container">
+            <div id="burger">
+                <a
+                    href="https://www.zomato.com/burger-restaurants-near-me"
+                    target="new"
+                >
+                    <img src="./images/burger.jfif" /><label>Burger</label>
+                </a>
+            </div>
+            <div id="pizza">
+                <a
+                    href="https://www.zomato.com/pizza-restaurants-near-me"
+                    target="new"
+                >
+                    <img src="./images/pizza.jpg" /><label>Pizza</label>
+                </a>
+            </div>
+            <div id="fries">
+                <a
+                    href="https://www.zomato.com/moradabad/restaurants?dishv2_id=c842f19c426edb825b5156a629d06d2e_2&category=1"
+                    target="new"
+                >
+                    <img
+                        src="./images/istockphoto-966934632-1024x1024.jpg"
+                    /><label>French Fries</label>
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <video
+                src="images/pexels-roman-odintsov-6092033 (1).mp4"
+                autoplay
+                controls
+                loop
+            ></video>
+        </div>
+    </body>
+</html>
