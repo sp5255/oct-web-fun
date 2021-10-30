@@ -65,8 +65,9 @@
             <a><div>26 october</div></a>
             <a><div>27 october(1)</div></a>
             <a><div>27 october(2)</div></a>
-            <a><div>28 october</div></a>
+            <!-- <a><div>28 october</div></a>      -->                    <!--  no class  -->
             <a><div>29 october</div></a>
+            
         </div>
     </body>
     <script type="text/javascript">
@@ -79,6 +80,9 @@
             let folder = div[i].children[0].innerHTML
             console.log(folder)
             links[i].target = 'new';
+            if(folder === '25 october'){
+                folder = '20 october'
+            }
             links[i].href = folder+'/index.html'
         }
 
