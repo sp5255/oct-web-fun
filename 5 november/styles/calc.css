@@ -1,0 +1,77 @@
+* {
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  background: tomato;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
+  padding: 2em;
+}
+
+.btn--container {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 1em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  row-gap: 1em;
+}
+
+#expression {
+  background: white;
+  line-height: 1.6rem;
+  font-size: larger;
+  max-width: 100%;
+  margin-bottom: 0.4rem;
+  padding: 0.2rem 0.7rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+}
+
+#expression,
+.btns {
+  font-family: "Audiowide", cursive;
+}
+
+.btns {
+  line-height: 1.6rem;
+  font-size: larger;
+  padding: 0.3rem 1rem;
+  margin: 0.1rem 0rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+}
+
+.clearAll {
+  width: 100%;
+}
+
+.btns:hover {
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
+}
+/*# sourceMappingURL=calc.css.map */
