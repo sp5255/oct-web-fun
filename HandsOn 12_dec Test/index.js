@@ -33,7 +33,7 @@ generateMeme.addEventListener("click", function () {
         })
         .catch((error) => {
             alert("something went wrong ! please try again");
-            console.log(eroot);
+            console.log(error);
 
             // style button as default
 
