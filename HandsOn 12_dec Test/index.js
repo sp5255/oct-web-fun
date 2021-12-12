@@ -1,7 +1,7 @@
 let memeImg = document.getElementById("meme-img");
 let generateMeme = document.getElementById("genereate-meme");
 
-memeImg.src = "https://i.redd.it/a4lmlplaxy481.jpg"; // default image
+memeImg.src = "	https://i.redd.it/cykdpsgpn3581.jpg"; // default image
 
 generateMeme.addEventListener("click", function () {
     // adding loader to the button
