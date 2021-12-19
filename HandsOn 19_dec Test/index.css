@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+label{
+    font-size: 2em;
+    font-weight: 500;
+}
+.container{
+    width: 50em;
+    height: 25em;
+    background: #efefef;
+    position: relative;
+    border-radius: 1em;    
+}
+
+#mainDiv{
+    height: 5em;
+    width: 5em;
+    top: 0px;
+    left:0px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;      
+    transition: all 1s ease-out;
+}
